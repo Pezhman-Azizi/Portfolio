@@ -56,6 +56,6 @@ The instructions here are given for the command line, but you could just as easi
 
 ## Resources
 
-- [Powerful Git Completion with ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+- [Powerful Git Completion with ohgitmyzsh](https://github.com/ohmyzsh/ohmyzsh)
 - [GitKraken](https://www.gitkraken.com/)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens/)

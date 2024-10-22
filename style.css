@@ -1,4 +1,4 @@
-/* Design tokens */
+/*------------------------------------------------------------- Design tokens */
 :root {
   --paper: hsla(251, 28%, 88%, 0.99);
   --ink: hsla(244, 16%, 17%, 0.95);
@@ -7,7 +7,7 @@
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
 }
-/* General Styles */
+/*-----------------------------------------------------------  General Styles */
 html,
 body {
   scroll-behavior: smooth;
@@ -34,7 +34,7 @@ a:focus {
   color: var(--brand);
   border-color: currentColor;
 }
-/* Site header and navigation */
+/*------------------------------------------------ Site header and navigation */
 body > header {
   background: var(--paper);
   display: flex;
@@ -44,13 +44,36 @@ body > header {
   top: 0;
   z-index: 1;
 }
+
 nav ul {
   display: flex;
   list-style: none;
   gap: var(--gap);
 }
 
-/* Text readability */
+nav a {
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/*---------------------------------------------------------- Text readability */
+
+section {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 section p {
   line-height: 1.5;
   max-width: 55ch;
@@ -61,3 +84,68 @@ section p {
 }
 
 
+/*------------------------------------------------------------- Project Cards */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--gap);
+}
+#projects p {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+#projects p:hover {
+  transform: translateY(-5px);
+}
+/*------------------------------------------------------------ Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: var(--brand);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: hsla(0, 79%, 63%, 1);
+}
+/*----------------------------------------------------------- Contact Section */
+.contact-me {
+  list-style: none;
+}
+.contact-me li {
+  margin: 0.5rem 0;
+}
+/*----------------------------------------------------------- Footer Styling */
+footer {
+  background-color: var(--ink);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------- Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+}
