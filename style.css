@@ -55,3 +55,9 @@ section p {
   line-height: 1.5;
   max-width: 55ch;
 }
+
+.contact-me{
+  list-style: none;
+}
+
+
