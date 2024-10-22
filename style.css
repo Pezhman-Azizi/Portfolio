@@ -110,10 +110,13 @@ button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
 }
 button:hover {
   background-color: hsla(0, 79%, 63%, 1);
 }
+
 /*----------------------------------------------------------- Contact Section */
 .contact-me {
   list-style: none;
